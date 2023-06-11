@@ -2,8 +2,8 @@ package AimsProject.src.hust.soict.cs;
 import AimsProject.src.hust.soict.cs.aims.media.Media;
 
 public class Disc extends Media {
-    private String director;
-    private int length;
+    protected String director;
+    protected int length;
 
     public String getDirector() {
         return director;
