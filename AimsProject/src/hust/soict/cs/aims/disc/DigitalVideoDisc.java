@@ -8,6 +8,10 @@ public class DigitalVideoDisc extends Disc implements Playable {
     private String director;
     private int length;
 
+    public DigitalVideoDisc() {
+
+    }
+
 
     public String getDirector() {
         return director;
@@ -51,7 +55,15 @@ public class DigitalVideoDisc extends Disc implements Playable {
 
     }
 
-    @Override
+    public DigitalVideoDisc(int id, String title, String category, String director, int length, float cost) {
+        this.title = title;
+        this.category = category;
+        this.director = director;
+        this.length = length;
+        this.cost = cost;
+        this.id = nbDigitalVideoDiscs;
+    }
+
     public String toString()
     {
         return "DVD - " + title + " - " + category + " - " + director + " - " + length + ": " + cost + " $";
