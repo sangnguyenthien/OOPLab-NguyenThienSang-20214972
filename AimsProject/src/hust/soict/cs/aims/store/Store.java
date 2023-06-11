@@ -5,7 +5,7 @@ import AimsProject.src.hust.soict.cs.aims.media.Media;
 import java.util.ArrayList;
 
 public class Store {
-    private ArrayList<Media> itemsInStore = new ArrayList<Media>();
+    public ArrayList<Media> itemsInStore = new ArrayList<Media>();
 
     public void addMedia(Media... MediaList)
     {
@@ -23,5 +23,17 @@ public class Store {
             itemsInStore.remove(obj);
         }
         System.out.println("Success!");
+    }
+
+    public void storeDisplay() {
+        System.out.println("Store:");
+        System.out.println("-----------------------------");
+        int i = 1;
+        for (Media media : itemsInStore) {
+            System.out.print(i+". ");
+            System.out.println(media);
+            i+=1;
+        }
+        System.out.println("-----------------------------");
     }
 }
