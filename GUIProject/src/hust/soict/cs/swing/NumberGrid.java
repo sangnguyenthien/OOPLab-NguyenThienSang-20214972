@@ -1,4 +1,4 @@
-package hust.soict.cybersec.swing;
+package hust.soict.cs.swing;
 
 import java.awt.*;
 import java.awt.event.*;
